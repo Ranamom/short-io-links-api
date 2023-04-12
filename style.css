@@ -1,0 +1,19 @@
+/*====== GOOGLE FONTS ======*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/*====== STYLE CSS ======*/
+*{box-sizing:border-box;margin:0;padding:0}
+body{display:flex;align-items:center;justify-content:center;min-height:100vh;background:#fafafa;font-family:'Inter',sans-serif}
+.form-main-wrapper{position:relative;width:580px;max-width:calc(100% - 32px);background:#fff;margin:0 auto;padding:28px;box-shadow:0 5px 35px rgb(232 232 232 / 44%);border-radius:15px}
+.form-main-wrapper h2{font-weight:600;font-size:22px;line-height:25px;color:#333;text-align:center;margin:0 0 20px 0}
+.form-main-wrapper form{display:grid;grid-template-columns:1fr}
+.form-main-wrapper .form-group{display:grid;grid-template-columns:1fr;margin:0 0 20px 0}
+.form-main-wrapper .form-group label{font-weight:500;font-size:16px;color:#333;margin:0 0 10px 0}
+.form-main-wrapper .form-group input{height:48px;background:#fff;color:#333;font-weight:400;font-size:16px;padding:8px 16px;border-radius:7px;border:1px solid #e0e0e0;outline:none}
+.form-main-wrapper .form-group input:focus{border-color:#0088FF;box-shadow:0 3px 8px rgba(0,0,0,0.05)}
+.form-main-wrapper .form-group .error-message,.form-main-wrapper .form-group .copied-message{color:#d93025;font-weight:400;font-size:16px;margin:10px 0 0 0;display:none}
+.form-main-wrapper .form-group .copied-message{color:#228B22}
+.form-main-wrapper .invalid.form-group .error-message,.form-main-wrapper .copy.form-group .copied-message{display:block}
+.form-main-wrapper .hidden{display:none!important}
+.form-main-wrapper button{display:flex;align-items:center;justify-content:center;height:48px;background:#0088FF;color:#fff;font-size:16px;border-radius:7px;box-shadow:0 1px 3px #0f172a1a;cursor:pointer;border:0}
+.form-main-wrapper button.copy-btn{margin:0 0 15px 0}
+.form-main-wrapper .form-group button:hover{box-shadow:0 3px 8px rgba(0,0,0,0.05)}

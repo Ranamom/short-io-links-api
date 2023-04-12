@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- Design By Smart Tech Mukesh - https://www.smarttechmukesh.com/ -->
+<html lang="en" dir="ltr">
+<head>
+    <title>Short.io Links Api</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon/favicon.ico">
+</head>
+<body>
+    <div class="form-main-wrapper">
+        <h2>Short.io Links Api</h2>
+        <form>
+            <div class="form-group url-group"><label for="url">Original URL</label><input type="text" name="url" placeholder="https://example.com" class="url"><span class="error-message">Please enter a valid URL, like https://example.com</span></div>
+            <div class="form-group path-group"><label for="path">Custom Path (Optional)</label><input type="text" name="path" placeholder="e.g: custom-name" class="path"><span class="error-message">Please enter a valid path. Only alphanumeric characters and hyphens are allowed.</span></div>
+            <div class="form-group title-group"><label for="title">Link Title (Optional)</label><input type="text" name="title" placeholder="e.g: This is Link Title" class="title"><span class="error-message">Please enter a valid title. Maximum 100 characters are allowed.</span></div>
+            <div class="form-group tags-group"><label for="tags">Link Tags (Optional)</label><input type="text" name="tags" placeholder="e.g: Html, Css, JavaScript" class="tags"><span class="error-message">Please enter valid tags. Only alphanumeric characters, commas, and spaces are allowed.</span></div>
+            <div class="hidden form-group copy-group"><label for="copylink">Copy Link</label><input type="text" name="copylink" class="copy-link"><span class="copied-message">Url Copied to Clipboard!</span></div>
+
+            <button class="short-btn" type="button">Short Url</button>
+            <button class="hidden copy-btn" type="button">Copy Link</button>
+            <button class="hidden reset-btn" type="button">Reset</button>
+
+        </form>
+    </div>
+    <script type="text/javascript">
+        const isLinksConfig = {
+            madeBy: "https://smarttechmukesh.com",
+            domainUrl: "example.com",
+            apiKey: "YOUR_API_KEY"
+        }
+    </script>
+    <script src="short-io-links-api.js"></script>
+</body>
+</html>
